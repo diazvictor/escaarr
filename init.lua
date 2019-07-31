@@ -15,8 +15,9 @@ for h in utils.range(tonumber(os.date("%H")), 24) do
 			print("Hora: " .. h .. "Minuto: " .. m .. "Segundo: " .. s)
 			utils.sleep(1000)
 
-			utils.voice("Escaarr, dando el reporte de la hora")
-			utils.voice("son las ".. os.date("%I") .. " con " .. os.date("%M") .. " minutos ")
 		end
 	end
+
+	utils.voice("Escaarr, dando el reporte de la hora")
+	utils.voice("son las ".. os.date("%I") .. " con " .. os.date("%M") .. " minutos ")
 end
